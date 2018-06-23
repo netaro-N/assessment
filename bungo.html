@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ブンゴウ！のポートフォリオ</title>
+    <link rel="stylesheet" href="bungo.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+        <div class="wrapper">
+            <div class="gradient"></div>
+            <video muted autoplay id="vid">
+                <source src="bungo-movie.webm" type="video/webm">
+            </video>
+        </div>
+
+        <div id="overlay">
+            <div id="contents">
+                <h1>おすすめの作家を診断します</h1>
+                <table>
+                    <tr>
+                        <div class="lists">
+                            <th>
+                                <label>お好み</label>
+                            </th>
+                            <td>
+                                <label>
+                                    <input type="radio" name="Nation" value=100 checked>日本</label>
+                                <label>
+                                    <input type="radio" name="Nation" value=200>海外</label>
+                            </td>
+                        </div>
+                    </tr>
+
+                    <tr>
+                        <div class="lists">
+                            <th>
+                                <label for="feel">今の気分</label>
+                            </th>
+                            <td>
+                                <select id="feel" name="feel">
+                                    <option value=0>すこぶる良い</option>
+                                    <option value=1>普通</option>
+                                    <option value=2>悪い</option>
+                                </select>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="lists">
+                            <th>
+                                <label for="want">欲しいもの</label>
+                            </th>
+                            <td>
+                                <select id="want" name="want">
+                                    <option value=0>情熱</option>
+                                    <option value=3>美、愛</option>
+                                    <option value=6>エンタメ</option>
+                                </select>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <th>
+                            お名前
+                        </th>
+                        <td>
+                            <input type="text" id="user-name" size="20" maxlength="15" placeholder="任意">
+                        </td>
+                    </tr>
+                </table>
+                <button id="assessment">診断する</button>
+            </div>
+<div id="Result-box">
+            <div id="result-area"></div>
+            <div id="tweet-area">
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            </div>
+        </div>
+    
+
+
+    <script src="bungo.js"></script>
+</body>
+
+</html>
