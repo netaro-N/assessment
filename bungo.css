@@ -1,0 +1,102 @@
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+  }
+  .gradient {
+    background-image:
+     linear-gradient(225deg,rgba(238, 66, 13, 0.32) , rgba(24, 30, 112, 0.8));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    background-size: cover;
+    z-index: 0;
+  }
+  video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover;
+    }
+#overlay{
+  width: 800px;
+  height: 400px;
+  border-radius: 5%;
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 10%;
+  background: rgba(124, 99, 124, 0.6);
+  outline: none #ffffff;
+  color: #eba74f;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Hannari','HanziPen SC',sans-serif;
+    text-align: center;
+}
+#contents{
+    position: absolute;
+    outline: none #78c0c0;
+    top: 0%;
+    bottom: 0%;
+    left: 5%;
+}
+table{
+   height: 180px;
+   margin: auto auto 15px auto; 
+    width: 350px;
+    border-style: none;
+    text-align: left;
+}
+button{
+    color: #2e6da4;
+    padding:5px 20px;
+    background-color: #ffdc76;
+    border-color: #cba980;
+    border-style: solid; 
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #eba74f; 
+}
+button:active {
+    background-color: #78c0c0;  
+    color: #ffffff;
+    text-decoration: none;
+} 
+
+input {
+    border-radius: 10px;
+    height: 20px;
+}
+
+/* 診断結果エリア */
+#Result-box{
+    position: absolute;
+    display: block;
+    top: 20%;
+    right: 3%;
+    color: #e09f4b;
+    outline: none #2e6da4;
+    border-radius: 5%;
+    background: rgba(93, 84, 146, 0.8);
+}
+h3{
+    color: #ebe14f;
+    font-family: sans-serif;
+    margin:0;
+}
+p{
+    margin:0;
+    font-size: 20px;
+}
